@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Aprenda a Dar Troco</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Aprenda a Dar Troco 💰</h1>
+        <div id="game-status">
+            <p>Nível: <span id="nivel">1</span></p>
+            <p>Pontuação: <span id="pontuacao">0</span></p>
+        </div>
+        
+        <div id="produtos-comprados">
+            <h2>Produtos Comprados:</h2>
+            <div id="lista-produtos"></div>
+        </div>
+        
+        <div id="valor-total">
+            <strong>Total: R$ <span id="total-compra">0.00</span></strong>
+        </div>
+        
+        <div id="dinheiro-dado">
+            <p>Dinheiro dado: R$ <span id="valor-dado">0.00</span></p>
+        </div>
+        
+        <div class="input-troco">
+            <label for="troco">Qual é o troco?</label>
+            <input type="number" id="troco" step="0.01" placeholder="Digite o valor do troco">
+        </div>
+        
+        <div id="feedback" class="feedback"></div>
+        
+        <div class="botoes">
+            <button id="btn-iniciar">Iniciar Desafio</button>
+            <button id="btn-verificar" disabled>Verificar Troco</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/src/game.js"></script>
+    <script src="/src/app.js"></script>
+</body>
+</html>
